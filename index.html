@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <title>Survey Form</title>
+</head>
+
+<body>
+     <div class="bg"></div>
+     <h1 id="title">Form survey Negara Konoha</h1>
+     <p id="description">Silahkan Isi Sesuai Kehendak Hati</p>
+     <form id="survey-form">
+          <label for="name" id="name-label">Name
+               <input type="text" id="name" placeholder="Enter Your Name" required>
+          </label>
+          <label for="email" id="email-label">Email
+               <input type="email" id="email" placeholder="Enter Your Email" required>
+          </label>
+          <label for="age" id="number-label">Age (Opsional)
+               <input type="number" id="number" placeholder="Enter Your Age" min="15" max="100">
+          </label>
+          <label for="dropdown" id="dropdown-label">Which option best describes your current role?
+               <select id="dropdown" required>
+                    <option disabled selected value>Select Current Role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+               </select>
+          </label>
+          <label>Would you recommend freeCodeCamp to a friend?</label>
+          <input type="radio" id="dif" value="Difenetly" name="user" checked>Difenetly<br>
+          <input type="radio" id="stud" value="Student" name="user">Student<br>
+          <input type="radio" id="oth" value="Other" name="user">Other
+          <label>What would you like to see improved?</label>
+          <input type="checkbox" value="checkbox1">checkbox1<br>
+          <input type="checkbox" value="checkbox2">checkbox2<br>
+          <input type="checkbox" value="checkbox3">checkbox3<br>
+          <label for="coment">Any comments or suggestions?
+               <textarea name="coment" id="" cols="10" rows="5"></textarea></label>
+
+          <button type="submit" id="submit">Submit</button>
+     </form>
+</body>
+
+</html>
